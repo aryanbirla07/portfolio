@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Aryan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="about.css"/>
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+ 
+  <!-- Light/Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <span id="themeToggle">🌙</span>
+  </div>
+<!-- Menu Button -->
+<a href="menu.html" class="menu-btn" id="menuToggle"><span>Menu</span></a>
+
+
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="profile-wrapper glass-profile">
+      <div class="profile-wrapper glass-profile fade-in-section">
+        <div class="profile-image">
+          <div class="image-border-glow">
+            <img src="ASSETS/ary (1).jpg" alt="Aryan">
+          </div>
+        </div>
+        <div class="profile-description">
+          <h1 class="crazy-heading">👨‍💻 Meet Aryan</h1>
+          <div class="underline-signature"></div>
+          <p>
+            Hey! I’m <strong>Aryan</strong>, a code-slinger who believes magic happens where logic meets art. From pixel-perfect frontend designs to AI-powered backend logic, I thrive in both realms. I’m not just a developer; I’m a creator of digital vibes.
+            <br><br>
+            On weekends, I chase cricket balls, mix music playlists, and binge tech documentaries. I'm always evolving — whether it's mastering a new JavaScript framework, studying neurodesign, or just sketching UX flows while sipping cold coffee.
+            <br><br>
+            Every line of my code? Purposeful. Every design element? Intentional. This isn’t just a portfolio — it’s my playground.
+          </p>
+        </div>
+      </div>
+      
+  </section>
+
+  <!-- Timeline -->
+  <!-- Timeline -->
+<section class="timeline-section">
+  <h2 class="crazy-heading">🧭 My Journey</h2>
+  <div class="timeline-container">
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-dot">💻</span>
+        <h3>2019 — Started Coding</h3>
+        <p>Wrote my first HTML lines and instantly got hooked on web dev.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-dot">🚀</span>
+        <h3>2021 — First Projects</h3>
+        <p>Created dynamic websites, dabbled in JS & fell for CSS animations.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-dot">💡</span>
+        <h3>2022 — UI/UX Design</h3>
+        <p>Discovered Figma, Adobe XD, and unleashed my inner design nerd.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-dot">🌐</span>
+        <h3>2023 — AI/ML Intern</h3>
+        <p>Infused creativity with tech, building AI-powered dev experiences.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-dot">🧠</span>
+        <h3>2024 — Company Website</h3>
+        <p>Designed and developed a full-stack website for a real-world biz!</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Certificates -->
+  <section class="certificate-section">
+    <h1 class= "crazy-heading">📜 My Certificates</h1>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="ASSETS/c2.jpeg" alt="Certificate 1" /></div>
+        <div class="swiper-slide"><img src="ASSETS/LinkedIn Learning Certificate_page-0001.jpg" alt="Certificate 2" /></div>
+        <div class="swiper-slide"><img src="ASSETS/ui ux 5_page-0001.jpg" alt="Certificate 3" /></div>
+        <!-- Add more certificates -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="about.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+const toggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Apply saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+    toggle.checked = true;
+  } else {
+    body.classList.remove('light-mode');
+    toggle.checked = false;
+  }
+
+  // Toggle event
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      body.classList.add('light-mode');
+      localStorage.setItem('theme', 'light');
+    } else {
+      body.classList.remove('light-mode');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+  <!-- SCROLL TO TOP BUTTON -->
+<button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+</script>
+<script src="all.js"></script>
+  <script src="theme.js"></script>
+  <script src="INDEX.JS"></script>
+  <footer class="footer">
+    <p>© 2025 ARYAN BIRLA. All rights reserved |</p>
+  </footer>
+  
+  
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="all.css">
+  <!-- JS -->
+</head>
+
+<body>
+  
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <span id="themeToggle">🌙</span>
+  </div>
+
+  <!-- Menu Button -->
+  <a href="menu.html" class="menu-btn"><span>Menu</span></a>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Contact Section -->
+    <section class="contact-container fade-in">
+      <div class="contact-card glass">
+        <h1>Let's Connect</h1>
+        <form action="https://formspree.io/f/mqapnrry" method="POST" id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="_replyto" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send ✉️</button>
+        </form>
+
+        <!-- Social Media Links -->
+        <div class="social-section">
+          <h3>Connect With Me</h3>
+          <div class="social-icons">
+            <a href="https://github.com/aryanbirla07" target="_blank" class="icon-link">
+              <img src="ASSETS/icons/github(1).png" alt="GitHub" class="icon" />
+            </a>
+            <a href="mailto:aryanbirla834@gmail.com" class="icon-link">
+              <img src="ASSETS/icons/gmail.png" alt="Gmail" class="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/aryan-birla-318755245/" target="_blank" class="icon-link">
+              <img src="ASSETS/icons/linkedin.png" alt="LinkedIn" class="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote of the Day Section -->
+    <section class="quote-section fade-in">
+      <h2>Quote of the Day</h2>
+      <div class="quote-box">
+        <p id="quoteText">Loading quote...</p>
+        <p id="quoteAuthor"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+  <footer class="footer">
+    <p>© 2025 ARYAN BIRLA. All rights reserved |</p>
+  <!-- Sound on Send -->
+  <audio id="send-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_636cb56336.mp3?filename=click-124467.mp3" preload="auto"></audio>
+  <script src="contact.js"></script>
+  <script src="all.js"></script>
+ 
+  
+</body>
+</html>
+
+
+
+
+

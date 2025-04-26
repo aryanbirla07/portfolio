@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Theme Toggle Button (Top Left Corner) -->
+  <div class="theme-toggle">
+    <span id="themeToggle">🌙</span>
+  </div>  
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+
+  <!-- Menu Content -->
+  <section class="menu-section">
+    <h1>✨ Explore My World</h1>
+    <div class="nav-links">
+      <a href="index.html" class="nav-item">🏠 Home</a>
+      <a href="about.html" class="nav-item">👤 About</a>
+      <a href="resume.html" class="nav-item">📄 Resume</a>
+      <a href="contact.html" class="nav-item">📬 Contact</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/aryanbirla07" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/aryanbirla07" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:aryanbirla834@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/aryan-birla-318755245/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </section>
+
+  <!-- Particles Script -->
+   <script src="shapes.js"></script>
+   <script src="about.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        size: { value: 3 },
+        color: { value: "#00ffe7" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ffe7",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          grab: { distance: 200, line_linked: { opacity: 0.6 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+  <!-- Light/Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  </script>
+    <script src="theme.js"></script>
+    <script src="INDEX.JS"></script>
+
+
+</body>
+</html>

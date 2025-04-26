@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+  }
+
+  body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .switch {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    width: 50px;
+    height: 26px;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 10px #00ffe7;
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #0a0a0a;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background: #111;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(24px);
+    background: #fff;
+  }
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin: 4rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.4);
+  }
+
+  .menu-section h1 {
+    font-size: 2.5rem;
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-align: center;
+  animation: glowPulse 3s ease-in-out infinite;
+
+  }
+
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #ffffff;
+    background: rgba(0, 255, 204, 0.1);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+  }
+
+  .nav-item:hover {
+    background: #00ffe7;
+    color: #0a0a0a;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffe7;
+  }
+
+  .social-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .social-icons a {
+    font-size: 1.8rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #00ffe7;
+    transform: scale(1.2);
+  }
+
+  body.light-mode {
+    background: #f5f9ff;
+    color: #0a0a0a;
+  }
+
+  body.light-mode .menu-section {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  body.light-mode .nav-item {
+    background: rgba(0, 0, 0, 0.05);
+    color: #0a0a0a;
+  }
+
+  body.light-mode .nav-item:hover {
+    background: #1a73e8;
+    color: #fff;
+    box-shadow: 0 0 20px #1a73e8;
+  }
+  body.light-mode .social-icons a {
+    font-size: 1.8rem;
+    color: #0a0a0a;
+    transition: all 0.3s ease;
+  }
+
+  body.light-mode .social-icons a:hover {
+    color: #1a73e8;
+  }.theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .theme-toggle span:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Optional emoji change */
+  body.light-mode #themeToggle {
+    content: '☀️';
+  }
+  body {
+    background: #0d0d0d;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.light-mode {
+    background: #e0f4ff;
+    color: #111;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111; /* or any color matching your theme */
+    color: #fff; /* text color */
+    font-size: 14px;
+    position: relative; /* or fixed if you want it always at the bottom */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
