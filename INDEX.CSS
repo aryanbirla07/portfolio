@@ -86,15 +86,7 @@ body {
   gap: 2rem;
 }
 
-.spotify-box, .map-box {
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  border-radius: 12px;
-  padding: 1rem;
-  width: 350px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
-}
+
 
 /* Fade In Sections */
 .fade-in-section {
@@ -293,5 +285,17 @@ body {
     width: 90%;
   }
 }
+.map-box {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Smaller height */
+  overflow: hidden;
+}
 
-
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+  filter: invert(90%) hue-rotate(180deg);
+}
