@@ -638,3 +638,37 @@ body.light-mode {
     font-size: 0.9rem;
   }
 }
+.menu-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem; /* <--- RIGHT side */
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .menu-btn {
+    top: 1.5rem;
+    right: 1.5rem; /* <-- Also right on tablet */
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-btn {
+    top: 1rem;
+    right: 1rem; /* <-- Right on mobile */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
