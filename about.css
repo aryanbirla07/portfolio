@@ -563,3 +563,44 @@ body.light-mode {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .profile-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-image img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .profile-description {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .profile-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .crazy-heading {
+    font-size: 2rem;
+  }
+}
