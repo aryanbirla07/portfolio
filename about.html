@@ -8,14 +8,22 @@
   <link rel="stylesheet" href="about.css"/>
   <link rel="stylesheet" href="all.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="preloader.css" />
 </head>
 <body>
-
- 
-  <!-- Light/Dark Mode Toggle -->
-  <div class="theme-toggle">
-    <span id="themeToggle">🌙</span>
+  <div id="preloader">
+    <div class="glass-box">
+      <div class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+      <div class="typing">Loading...</div>
+    </div>
   </div>
+  
+ 
+  
 <!-- Menu Button -->
 <a href="menu.html" class="menu-btn" id="menuToggle"><span>Menu</span></a>
 
@@ -30,7 +38,7 @@
       <div class="profile-wrapper glass-profile fade-in-section">
         <div class="profile-image">
           <div class="image-border-glow">
-            <img src="ASSETS/ary (1).jpg" alt="Aryan">
+            <img src="ASSETS/aryann-removebg-preview.png " alt="Aryan">
           </div>
         </div>
         <div class="profile-description">
@@ -48,54 +56,7 @@
       
   </section>
 
-  <!-- Timeline -->
-  <!-- Timeline -->
-<section class="timeline-section">
-  <h2 class="crazy-heading">🧭 My Journey</h2>
-  <div class="timeline-container">
-
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-dot">💻</span>
-        <h3>2019 — Started Coding</h3>
-        <p>Wrote my first HTML lines and instantly got hooked on web dev.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-dot">🚀</span>
-        <h3>2021 — First Projects</h3>
-        <p>Created dynamic websites, dabbled in JS & fell for CSS animations.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-dot">💡</span>
-        <h3>2022 — UI/UX Design</h3>
-        <p>Discovered Figma, Adobe XD, and unleashed my inner design nerd.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-dot">🌐</span>
-        <h3>2023 — AI/ML Intern</h3>
-        <p>Infused creativity with tech, building AI-powered dev experiences.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <span class="timeline-dot">🧠</span>
-        <h3>2024 — Company Website</h3>
-        <p>Designed and developed a full-stack website for a real-world biz!</p>
-      </div>
-    </div>
-
-  </div>
-</section>
+  
 
   <!-- Certificates -->
   <section class="certificate-section">
@@ -104,7 +65,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="ASSETS/c2.jpeg" alt="Certificate 1" /></div>
         <div class="swiper-slide"><img src="ASSETS/LinkedIn Learning Certificate_page-0001.jpg" alt="Certificate 2" /></div>
-        <div class="swiper-slide"><img src="ASSETS/ui ux 5_page-0001.jpg" alt="Certificate 3" /></div>
+        <div class="swiper-slide"><img src="ASSETS/ui ux final_page-0001.jpg" alt="Certificate 3" /></div>
         <!-- Add more certificates -->
       </div>
     </div>
@@ -119,26 +80,7 @@
 const toggle = document.getElementById('theme-toggle');
   const body = document.body;
 
-  // Apply saved theme
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'light') {
-    body.classList.add('light-mode');
-    toggle.checked = true;
-  } else {
-    body.classList.remove('light-mode');
-    toggle.checked = false;
-  }
-
-  // Toggle event
-  toggle.addEventListener('change', () => {
-    if (toggle.checked) {
-      body.classList.add('light-mode');
-      localStorage.setItem('theme', 'light');
-    } else {
-      body.classList.remove('light-mode');
-      localStorage.setItem('theme', 'dark');
-    }
-  });
+ 
   <!-- SCROLL TO TOP BUTTON -->
 <button id="scrollTopBtn" title="Go to top">⬆️</button>
 
@@ -146,6 +88,7 @@ const toggle = document.getElementById('theme-toggle');
 <script src="all.js"></script>
   <script src="theme.js"></script>
   <script src="INDEX.JS"></script>
+  <script src="preloader.js" defer></script>
   <footer class="footer">
     <p>© 2025 ARYAN BIRLA. All rights reserved |</p>
   </footer>

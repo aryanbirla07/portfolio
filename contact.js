@@ -3,18 +3,7 @@ window.addEventListener('load', () => {
     document.getElementById('loader').style.display = 'none';
   });
   
-  // Theme Toggle
-  const themeToggle = document.getElementById('themeToggle');
-  themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === "dark") {
-      document.documentElement.setAttribute('data-theme', 'light');
-      themeToggle.textContent = '☀️';
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      themeToggle.textContent = '🌙';
-    }
-  });
+ 
   
   // Scroll To Top Button
   const scrollTopBtn = document.getElementById('scrollTopBtn');
@@ -81,5 +70,23 @@ window.addEventListener('load', () => {
     interactivity: {
       events: { onhover: { enable: true, mode: "repulse" } }
     }
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const flipCard = document.getElementById('flipCard');
+    const flipToBack = document.getElementById('flipToBack');
+    const flipToFront = document.getElementById('flipToFront');
+    const downloadBtn = document.getElementById('downloadBtn');
+  
+    flipToBack.addEventListener('click', () => {
+      flipCard.classList.add('flipped');
+    });
+  
+    flipToFront.addEventListener('click', () => {
+      flipCard.classList.remove('flipped');
+    });
+  
+    downloadBtn.addEventListener('click', () => {
+      window.open('ASSETS/Resume.pdf', '_blank'); // Update this path if needed
+    });
   });
   

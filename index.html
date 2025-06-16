@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Developer Portfolio</title>
-  <meta name="google-site-verification" content="cT_NRhI4ET9JijV0t-lDzZRGa8CDJ8L_8FO6U8uu1Os" />
+
   <!-- CSS Links -->
   <link rel="stylesheet" href="about.css" />
   <link rel="stylesheet" href="INDEX.CSS" />
   <link rel="stylesheet" href="all.css" />
-  
+  <link rel="stylesheet" href="preloader.css" />
   <!-- Fonts and Libraries -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
@@ -18,11 +18,17 @@
 </head>
 
 <body>
+  <div id="preloader">
+    <div class="glass-box">
+      <div class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+      <div class="typing">Loading...</div>
+    </div>
+  </div>
 
-<!-- Light/Dark Mode Toggle -->
-<div class="theme-toggle">
-  <span id="themeToggle">🌙</span>
-</div>
 
 <!-- Menu Button -->
 <a href="menu.html" class="menu-btn" id="menuToggle"><span>Menu</span></a>
@@ -37,31 +43,34 @@
     <p><span id="typed-text"></span><span class="cursor">|</span></p>
   </div>
   <div class="hero-img-wrapper enhanced-img">
-    <img src="ASSETS/ary (2).jpg" alt="Aryan Birla" class="hero-img" />
+    <img src="ASSETS/aryannn.jpeg" alt="Aryan Birla" class="hero-img" />
   </div>
 </div>
 
 <!-- Spotify and Map Section -->
 <div class="side-info side-by-side-boxes">
-  <div class="spotify-box glass-box">
+  
+    <div class="embed-box">
     <h3>🎵 Listening To</h3>
-    <iframe style="border-radius:12px"
+    <iframe class="responsive-iframe" style="border-radius:12px"
       src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator"
       width="100%" height="200" frameBorder="0"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy"></iframe>
   </div>
 
-  <div class="map-box glass-box">
+
+
+    <div class="embed-box">
     <h3>🗺️ Location</h3>
-    <iframe
+    <iframe class="responsive-iframe"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.854816970161!2d75.7873!3d26.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db436f3e07b55%3A0xf8c1bc46e0efebbd!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1714143212345!5m2!1sen!2sin"
       width="100%" height="100%"
       style="border:0; border-radius:12px; filter: invert(90%) hue-rotate(180deg);"
       allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-</div>
 
+</div>
 <!-- Why Work With Me Section -->
 <section class="fade-in-section">
   <section class="why-work">
@@ -227,8 +236,8 @@
 <script src="about.js"></script>
 <script src="all.js"></script>
 
+<script src="preloader.js" defer></script>
+
+
 </body>
 </html>
-
-
-</body>

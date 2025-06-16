@@ -17,12 +17,7 @@ particlesJS("particles-js", {
     }
   });
   
-  // Theme Toggle
-  const toggle = document.getElementById("themeToggle");
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-    toggle.textContent = document.body.classList.contains("light-mode") ? "☀️" : "🌙";
-  });
+ 
   
   // Swiper Slider
   new Swiper(".swiper-container", {
@@ -37,7 +32,7 @@ particlesJS("particles-js", {
     }
   });
   ScrollReveal().reveal('.profile-wrapper', { delay: 200, distance: '50px', origin: 'bottom', duration: 1000 });
-ScrollReveal().reveal('.timeline-item', { interval: 200, distance: '40px', origin: 'left' });
+
 ScrollReveal().reveal('.certificate-section', { delay: 400, origin: 'bottom' });
 
 particlesJS("particles-js", {
@@ -53,25 +48,7 @@ particlesJS("particles-js", {
       events: { onhover: { enable: true, mode: "repulse" } }
     }
   });
-  ScrollReveal().reveal('.timeline-item', {
-    interval: 200,
-    distance: '60px',
-    origin: 'left',
-    opacity: 0,
-    duration: 800,
-    easing: 'ease-in-out',
-  });
-  const timelineItems = document.querySelectorAll('.timeline-item');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate');
-    }
-  });
-}, { threshold: 0.2 });
-
-timelineItems.forEach(item => observer.observe(item));
 
 const menuBtn = document.getElementById('menuToggle');
 let isMenuOpen = false;

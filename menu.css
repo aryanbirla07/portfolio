@@ -131,73 +131,9 @@
     transform: scale(1.2);
   }
 
-  body.light-mode {
-    background: #f5f9ff;
-    color: #0a0a0a;
-  }
-
-  body.light-mode .menu-section {
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-
-  body.light-mode .nav-item {
-    background: rgba(0, 0, 0, 0.05);
-    color: #0a0a0a;
-  }
-
-  body.light-mode .nav-item:hover {
-    background: #1a73e8;
-    color: #fff;
-    box-shadow: 0 0 20px #1a73e8;
-  }
-  body.light-mode .social-icons a {
-    font-size: 1.8rem;
-    color: #0a0a0a;
-    transition: all 0.3s ease;
-  }
-
-  body.light-mode .social-icons a:hover {
-    color: #1a73e8;
-  }.theme-toggle {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    cursor: pointer;
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-  }
   
   
-
-  .theme-toggle span:hover {
-    transform: scale(1.2);
-  }
-  
-  /* Optional emoji change */
-  body.light-mode #themeToggle {
-    content: '☀️';
-  }
-  body {
-    background: #0d0d0d;
-    color: #fff;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  body.light-mode {
-    background: #e0f4ff;
-    color: #111;
-  }
-  
-  .theme-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 999;
-  }
+ 
   .footer {
     text-align: center;
     padding: 20px;

@@ -11,49 +11,74 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- CSS -->
- <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="all.css">
   <link rel="stylesheet" href="resume.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="preloader.css" />
   <!-- JS -->
   <script src="resume.js" defer></script>
 </head>
 
 <body>
-
+  <div id="preloader">
+    <div class="glass-box">
+      <div class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+      <div class="typing">Loading...</div>
+    </div>
+  </div>
+  
 <!-- Particle Background -->
 <div id="particles-js"></div>
 
-<!-- Theme Toggle -->
-<div class="theme-toggle">
-  <span id="themeToggle">🌙</span>
-</div>
 
 <!-- Menu Button -->
 <a href="menu.html" class="menu-btn"><span>Menu</span></a>
 
 <!-- Main Content -->
 <main class="content">
-
   <section class="resume-container fade-in">
     <div class="resume-card glass">
       <h1>My <span class="highlight">Resume</span></h1>
 
-      <img src="ASSETS/WhatsApp Image 2025-04-26 at 4.55.09 PM.jpeg" alt="Aryan Birla Resume" class="resume-image" />
- 
-      <!-- Custom Download Button -->
-      <button id="downloadBtn" class="download-btn">Download Resume 📄</button>
+      <!-- Flipbook Section -->
+      <div class="flipbook-wrapper" id="flipCard">
+        <div class="flip-inner">
+          <!-- Page 1 -->
+          <div class="resume-page front">
+            <img src="ASSETS/Aryan_Birla_Resume_With_Visible_Links (1)_page-0001.jpg" alt="Resume Page 1" class="resume-image" />
+            <button class="flip-btn" id="toPage2">Next →</button>
+          </div>
 
+          <!-- Page 2 -->
+          <div class="resume-page back">
+            <img src="ASSETS/Aryan_Birla_Resume_With_Visible_Links (1)_page-0002.jpg" alt="Resume Page 2" class="resume-image" />
+            <div class="footer-btns">
+              <button class="flip-btn" id="toPage1">← Back</button>
+              <a href="/mnt/data/aryanbir1.pdf" download class="download-btn">Download 📄</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
 </main>
+
+<!-- Footer -->
 <footer class="footer">
-    <p>© 2025 ARYAN BIRLA. All rights reserved |</p>
+  <p>© 2025 ARYAN BIRLA. All rights reserved |</p>
+</footer>
+
 <!-- Scroll To Top Button -->
 <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+<!-- Scripts -->
 <script src="resume.js"></script>
 <script src="about.js"></script>
-
+<script src="preloader.js" defer></script>
 </body>
 </html>
+

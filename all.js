@@ -1,20 +1,5 @@
 // index.js
 
-// Light/Dark Mode Toggle
-const themeToggle = document.getElementById("themeToggle");
-const currentTheme = localStorage.getItem("theme");
-
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-  themeToggle.textContent = currentTheme === "light" ? "☀️" : "🌙";
-}
-
-themeToggle.addEventListener("click", () => {
-  const theme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem("theme", theme);
-  themeToggle.textContent = theme === "light" ? "☀️" : "🌙";
-});
 
 // ScrollReveal Animations
 ScrollReveal({

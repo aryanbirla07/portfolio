@@ -51,21 +51,7 @@ function revealGlassBoxes() {
   });
 }
 
-// Apply theme on load
-function applyTheme() {
-  const themeToggle = document.getElementById("themeToggle");
-  const currentTheme = localStorage.getItem("theme");
-  if (currentTheme) {
-    document.documentElement.setAttribute("data-theme", currentTheme);
-    themeToggle.textContent = currentTheme === "light" ? "☀️" : "🌙";
-  }
-  themeToggle.addEventListener("click", () => {
-    const theme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-    themeToggle.textContent = theme === "light" ? "☀️" : "🌙";
-  });
-}
+
 
 // Initialize ScrollReveal
 ScrollReveal({

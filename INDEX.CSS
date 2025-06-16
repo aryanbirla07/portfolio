@@ -14,14 +14,7 @@
   --highlight-color: #00ffe1;
 }
 
-/* Light Theme */
-[data-theme="light"] {
-  --bg-color: #f5f5f5;
-  --text-color: #1a1a1a;
-  --glass-bg: rgba(255, 255, 255, 0.4);
-  --glass-border: rgba(0, 0, 0, 0.1);
-  --hover-fill: #1a1a1a;
-  --highlight-color: #004bff;
+
 }
 
 /* Body */
@@ -79,11 +72,25 @@ body {
 
 /* Spotify & Map Section */
 .side-info {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 3rem 1rem;
-  gap: 2rem;
+  .side-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+}
+.embed-box {
+  flex: 1 1 45%;
+  min-width: 320px;
+  max-width: 600px;
+  width: 100%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -282,20 +289,43 @@ body {
     height: 160px;
   }
   .glass-box {
-    width: 90%;
-  }
-}
-.map-box {
-  position: relative;
-  width: 100%;
-  height: 200px; /* Smaller height */
-  overflow: hidden;
-}
+    width: 90vw;
+max-width: 900px;
+margin: auto;
 
-.map-box iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 12px;
-  filter: invert(90%) hue-rotate(180deg);
-}
+  }
+  .responsive-iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  
+  .map-box {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+    filter: invert(90%) hue-rotate(180deg);
+  }
+  @media screen and (max-width: 600px) {
+    .glass-box,
+    .embed-box {
+      width: 90vw;
+      max-width: 100%;
+      margin: auto;
+    }
+  
+    .responsive-iframe {
+      height: 300px;
+    }
+  }
+  

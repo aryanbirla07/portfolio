@@ -15,21 +15,24 @@
   <link rel="stylesheet" href="contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="all.css">
-  <!-- JS -->
+<link rel="stylesheet" href="preloader.css" />
+  
 </head>
 
 <body>
+  <div id="preloader">
+    <div class="glass-box">
+      <div class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+      <div class="typing">Loading...</div>
+    </div>
+  </div>
   
   <!-- Particle Background -->
   <div id="particles-js"></div>
-
-
-
-  <!-- Theme Toggle -->
-  <div class="theme-toggle">
-    <span id="themeToggle">🌙</span>
-  </div>
-
   <!-- Menu Button -->
   <a href="menu.html" class="menu-btn"><span>Menu</span></a>
 
@@ -51,13 +54,13 @@
         <div class="social-section">
           <h3>Connect With Me</h3>
           <div class="social-icons">
-            <a href="https://github.com/aryanbirla07" target="_blank" class="icon-link">
+            <a href="https://github.com/aryanbirla07" class="icon-link">
               <img src="ASSETS/icons/github(1).png" alt="GitHub" class="icon" />
             </a>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aryanbirla834@gmail.com" class="icon-link">
               <img src="ASSETS/icons/gmail.png" alt="Gmail" class="icon" />
             </a>
-            <a href="https://www.linkedin.com/in/aryan-birla-318755245/" target="_blank" class="icon-link">
+            <a href="https://www.linkedin.com/in/aryan-birla-318755245/" class="icon-link">
               <img src="ASSETS/icons/linkedin.png" alt="LinkedIn" class="icon" />
             </a>
           </div>
@@ -84,7 +87,7 @@
   <audio id="send-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_636cb56336.mp3?filename=click-124467.mp3" preload="auto"></audio>
   <script src="contact.js"></script>
   <script src="all.js"></script>
- 
+  <script src="preloader.js" defer></script>
   
 </body>
 </html>
