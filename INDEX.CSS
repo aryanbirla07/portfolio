@@ -48,6 +48,7 @@ body {
 .main-heading .highlight {
   color: var(--highlight-color);
   text-shadow: 0 0 10px var(--highlight-color);
+  
 }
 
 /* Typing Effect */

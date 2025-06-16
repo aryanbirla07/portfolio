@@ -124,7 +124,7 @@ body {
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
   text-align: center;
-  animation: glowPulse 3s ease-in-out infinite;
+
 }
 @keyframes glowPulse {
   0%, 100% { text-shadow: 0 0 10px #0ff; }
